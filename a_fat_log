@@ -1,0 +1,68 @@
+const entries = Object.entries(job_list);
+console.log(entries);
+VM55:2 (3) [Array(2), Array(2), Array(2)]0: Array(2)0: "0"1: {id: '12345ab', company: 'Dildos Inc'}length: 2[[Prototype]]: Array(0)1: (2) ['1', {…}]2: (2) ['2', {…}]length: 3[[Prototype]]: Array(0)
+undefined
+document.getElementById("content") 
+<div id=​"content">​…​</div>​
+let el = document.getElementById("content");
+undefined
+el.innerHTML = entries
+(3) [Array(2), Array(2), Array(2)]
+const entries = Object.entries(job_list);
+undefined
+el.innerHTML(entries);
+VM660:1 Uncaught TypeError: el.innerHTML is not a function
+    at <anonymous>:1:4
+(anonymous) @ VM660:1
+el.innerHTML = object.entries(job_list);
+VM751:1 Uncaught ReferenceError: object is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM751:1
+el.innerHTML = Objectbject.entries(job_list);
+VM788:1 Uncaught ReferenceError: Objectbject is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM788:1
+el.innerHTML = Object.entries(job_list);
+(3) [Array(2), Array(2), Array(2)]0: Array(2)0: "0"1: {id: '12345ab', company: 'Dildos Inc'}length: 2[[Prototype]]: Array(0)1: (2) ['1', {…}]2: Array(2)0: "2"1: {id: '12366ab', company: 'Sex in the city'}length: 2[[Prototype]]: Array(0)length: 3[[Prototype]]: Array(0)
+el.innerHTML = job_list[0].id;
+'12345ab'
+var para = job_list[0].id + "and works at" + job_list[0].company; 
+undefined
+el.innerHTML = para;
+'12345aband works atDildos Inc'
+let list = "<ul>"
+undefined
+for(let i = 0; i< job_list.length; i++){ list += "<li>" + job_list[i].id + "</li> ; list += "</ul>";
+VM1783:1 Uncaught SyntaxError: Invalid regular expression: missing /
+for(let i = 0; i< job_list.length; i++){ list += "<li>" + job_list[i].id + "</li> ; list += "</ul>";}
+                                        
+VM1791:1 Uncaught SyntaxError: Invalid regular expression: missing /
+let list = "<ul>"
+for(i = 0; i< job_list.length; i++)
+{ list += "<li>" + job_list[i].id + "</li>";
+ list += "</ul>"; 
+}
+
+'<ul><li>12345ab</li></ul><li>12346ab</li></ul><li>12366ab</li></ul>'
+el.innerHTML = list;
+'<ul><li>12345ab</li></ul><li>12346ab</li></ul><li>12366ab</li></ul>'
+
+let list = "<ul>"
+for(i = 0; i< job_list.length; i++)
+{ list += "<li>" + job_list[i].id  + "</li>" + 
+"<li>" + job_list[i].company + "</li>";
+ list += "</ul>"; 
+}
+
+'<ul><li>12345ab</li><li>Dildos Inc</li></ul><li>12346ab</li><li>JoyRide Inc</li></ul><li>12366ab</li><li>Sex in the city</li></ul>'
+el.innerHTML=list;
+'<ul><li>12345ab</li><li>Dildos Inc</li></ul><li>12346ab</li><li>JoyRide Inc</li></ul><li>12366ab</li><li>Sex in the city</li></ul>'
+let list = "<ul>"
+for(i = 0; i< job_list.length; i++)
+{ list += "<li>" + job_list[i].id  + "</li>" + 
+"<li>" + job_list[i].company + "</li>" + "<p> </p>";
+ list += "</ul>"; 
+}
+'<ul><li>12345ab</li><li>Dildos Inc</li><p> </p></ul><li>12346ab</li><li>JoyRide Inc</li><p> </p></ul><li>12366ab</li><li>Sex in the city</li><p> </p></ul>'
+el.innerHTML= list;
+'<ul><li>12345ab</li><li>Dildos Inc</li><p> </p></ul><li>12346ab</li><li>JoyRide Inc</li><p> </p></ul><li>12366ab</li><li>Sex in the city</li><p> </p></ul>'
